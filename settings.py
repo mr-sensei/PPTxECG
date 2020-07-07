@@ -1,4 +1,4 @@
-#####Some constants (Kind of. Python doesn't really do constants.)
+#####Some constants
 #
 # Word length Comparisons
 # Compares slide word counts to other types of text.

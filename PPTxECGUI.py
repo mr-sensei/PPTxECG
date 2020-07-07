@@ -4,7 +4,7 @@ from tkinter import ttk
 from tkinter import filedialog
 from tkinter import messagebox
 import PPTxECG as pptxecg
-logging.basicConfig(level=logging.DEBUG, format=' %(levelname)s - %(asctime)s: %(message)s')
+#logging.basicConfig(level=logging.DEBUG, format=' %(levelname)s - %(asctime)s: %(message)s')
 
 
 ###Some strings used in display.

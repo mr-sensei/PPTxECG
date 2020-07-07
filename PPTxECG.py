@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 import settings
 import logging
-logging.basicConfig(level=logging.DEBUG, format=' %(levelname)s - %(asctime)s: %(message)s')
+#logging.basicConfig(level=logging.DEBUG, format=' %(levelname)s - %(asctime)s: %(message)s')
 
 #Both main tuples for passing data have the following parts. This is defined here for readability.
 PRES_COUNT = 0  # Number of presentations
@@ -179,6 +179,7 @@ def _make_xlsx(metrics, hours):
     # Folder path, no of pres || File name
     #
     # Tot wordcount: ...
+    #TODO: wordcount comment (how long would this take the slowest reader to read.)
     # [ Planned hours: ...
     #   WPM Note: ...       ]
     #
@@ -339,7 +340,13 @@ def _path_to_pres(full_path):
 
 
 if __name__ == "__main__":
-    #Switch things to test different scenario
+    #TODO: put the following behind a test branch and use argparse to make this command line usable
+    # e.g. PPTxECG.py path_to_file(s) [<options> arguments]
+    # -h    help and usage
+    # -o [name]   dump output to spreadsheet called 'name'
+    # -s    Analyse the sample file
+    #
+    # Switch things to test different scenario
     thing = Path('.','sample/sample.pptx')
     x = analyse_this(thing)
     print(x)

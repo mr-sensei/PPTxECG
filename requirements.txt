@@ -3,7 +3,7 @@ isort==4.3.21
 lazy-object-proxy==1.4.3
 lxml==4.5.1
 mccabe==0.6.1
-Pillow==7.1.2
+Pillow==9.3.0
 pylint==2.5.2
 python-pptx==0.6.18
 six==1.15.0
